@@ -22,7 +22,7 @@ namespace IdentityWithJWT.Api.Models
 /* 
  * 
  * IdentityDbContext khong thay xai` trong pcc?
-  
-     
+   aspnetroleclaim: contain all the claims that are related to the role in 
+   aspnetuserclaim: contain the claims of the user login  
      
      */

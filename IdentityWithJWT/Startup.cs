@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IdentityWithJWT.Api.Models;
+using IdentityWithJWT.Api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -61,6 +62,8 @@ namespace IdentityWithJWT
                     ValidateIssuerSigningKey = true
                 };
             });
+
+            services.AddScoped<IUserService, UserService>();
 
             services.AddControllers();
         }
